@@ -1,0 +1,65 @@
+name: PS5 Marktplaats Monitor
+
+on:
+  # Hernoemd van monitor.yml naar monitor_v2.yml (13-10-2026): GitHub's
+  # schedule-trigger voor deze 5 workflows registreerde zichzelf niet
+  # meer betrouwbaar (vanaf 9-10, vermoedelijk nasleep van het brede
+  # GitHub-incident van 7-10) -- disable/enable via de API hielp niet.
+  # Een workflow-ID is gekoppeld aan het bestandspad, dus een nieuwe
+  # bestandsnaam dwingt een verse registratie af, zonder secrets/state/
+  # geschiedenis kwijt te raken.
+  #
+  # Gespreid (13-10-2026): alle 5 monitors in dit account stonden op
+  # exact dezelfde "*/5 * * * *" en botsten daardoor elke 5 minuten
+  # gelijktijdig -- GitHub's eigen documentatie over het schedule-event
+  # zegt expliciet dat bij hoge belasting "some queued jobs may be
+  # dropped", en raadt aan "to schedule your workflow to run at a
+  # different time of the hour". Gemeten: hierdoor sloeg GitHub soms
+  # 7+ uur aan geplande runs gewoon over (geen foutmelding, de run
+  # verscheen simpelweg nooit). Deze monitor behoudt minuut-offset 0
+  # (:00/:05/:10/...), de andere 4 monitors zijn verschoven naar
+  # offset 1/2/3/4 zodat nooit twee tegelijk een runner opeisen.
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ps5-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run monitor
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          MIN_PRICE_EUR: "250"
+          POSTCODE: ${{ secrets.POSTCODE }}
+          DISTANCE_KM: "28"
+        run: python scripts/monitor.py
+
+      - name: Commit bijgewerkte state
+        run: |
+          git config user.name "ps5-monitor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state/seen_ps5.json
+          git diff --cached --quiet || git commit -m "Update seen listings"
+                    for i in 1 2 3 4 5; do
+            git push && break
+            echo "Push mislukt (poging $i), opnieuw proberen na rebase..."
+            git fetch origin main
+            git rebase origin/main
+            sleep $((RANDOM % 8 + 2))
+          done

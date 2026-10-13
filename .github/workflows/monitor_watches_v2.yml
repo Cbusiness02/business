@@ -1,0 +1,55 @@
+name: Horloge Koopjes Monitor
+
+on:
+  # Hernoemd van monitor_watches.yml naar monitor_watches_v2.yml (13-10-2026):
+  # zie monitor_v2.yml voor de volledige uitleg (verse workflow-ID-registratie
+  # omdat GitHub's schedule-trigger was vastgelopen; disable/enable hielp niet).
+  #
+  # Gespreid (13-10-2026): minuut-offset 4 (:04/:09/:14/...) i.p.v. 0, zodat
+  # deze monitor niet meer gelijktijdig met de andere 4 een runner opeist --
+  # zie monitor.yml voor de volledige uitleg (GitHub's "some queued jobs
+  # may be dropped" bij hoge belasting op het schedule-event).
+  schedule:
+    - cron: "4-59/5 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: watch-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run monitor
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          # 50km straal (bewust gekozen ondanks dat dit weinig aanbod geeft
+          # voor de huidige curated modellenlijst -- leeg laten zou heel
+          # Nederland betekenen).
+          POSTCODE: ${{ secrets.POSTCODE }}
+          DISTANCE_KM: "50"
+          ASKING_MIN_EUR: "400"
+          ASKING_MAX_EUR: "2500"
+          NEGOTIATION_BUFFER_EUR: "150"
+          MIN_MARGIN_EUR: "100"
+        run: python scripts/monitor_watches.py
+
+      - name: Commit bijgewerkte state
+        run: |
+          git config user.name "watch-monitor-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state/seen_watches.json
+          git diff --cached --quiet || git commit -m "Update seen listings (watches)"
+          git push
