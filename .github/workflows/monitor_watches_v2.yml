@@ -10,8 +10,8 @@ on:
   # "some queued jobs may be dropped" bij hoge belasting rond het hele/
   # halve uur) en gespreid t.o.v. de andere monitors zodat ze niet
   # gelijktijdig een runner opeisen.
-  schedule:
-    - cron: "56 * * * *"
+  # Geen eigen schedule meer: draait via monitor_loop.yml (13-10-2026).
+  # Handmatig starten kan nog steeds.
   workflow_dispatch: {}
 
 permissions:

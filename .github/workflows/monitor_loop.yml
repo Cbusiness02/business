@@ -1,0 +1,124 @@
+name: Monitor Loop (alle 5 monitors)
+
+# Waarom deze workflow (13-10-2026): GitHub's schedule-trigger (cron) bleek
+# voor deze monitors structureel onbetrouwbaar -- ook na hernoemen naar
+# _v2 en na verhuizing naar een nieuw account werden geplande runs urenlang
+# overgeslagen, zonder foutmelding. Handmatig starten (workflow_dispatch)
+# werkt wel altijd betrouwbaar.
+#
+# Daarom leunt deze workflow niet meer op de planner:
+#   1. Eén job draait zelf ~5u40m door en voert elke 5 minuten de monitors
+#      uit (PS5 elke ronde, de andere 4 elk één keer per uur, gespreid).
+#   2. Na elke ronde wordt de "al gezien"-state gecommit en gepusht.
+#   3. Aan het eind start de job zichzelf opnieuw via workflow_dispatch.
+#      Dat gebeurt ook als de lus met een fout eindigt (niet bij handmatig
+#      annuleren -- zo kun je hem altijd stoppen).
+#   4. De uurlijkse cron is alleen een vangnet: als de keten ooit breekt,
+#      pakt de eerstvolgende geplande run die wel doorkomt hem weer op.
+#      Door de concurrency-groep draait er nooit meer dan één lus tegelijk;
+#      een extra start wacht netjes tot de lopende lus klaar is.
+#
+# Volledig stoppen: Actions -> Monitor Loop -> "..." -> Disable workflow,
+# en daarna de lopende run annuleren.
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: monitor-loop
+  cancel-in-progress: false
+
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    # GitHub's maximum is 360 minuten; de lus stopt zelf na 340.
+    timeout-minutes: 355
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Monitors elke 5 minuten draaien
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          POSTCODE: ${{ secrets.POSTCODE }}
+          LOOP_MINUTES: "340"
+          INTERVAL_SECONDS: "300"
+        run: |
+          git config user.name "monitor-loop-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          # Zelfde instellingen als in de losse _v2-workflows.
+          run_ps5()      { DISTANCE_KM=28 MIN_PRICE_EUR=250 python scripts/monitor.py; }
+          run_iphones()  { DISTANCE_KM=28 python scripts/monitor_iphones.py; }
+          run_macbooks() { DISTANCE_KM=28 MIN_PRICE_EUR=200 python scripts/monitor_macbooks.py; }
+          run_switch2()  { DISTANCE_KM=28 MIN_PRICE_EUR=300 python scripts/monitor_switch2.py; }
+          run_watches()  {
+            DISTANCE_KM=50 ASKING_MIN_EUR=400 ASKING_MAX_EUR=2500 \
+            NEGOTIATION_BUFFER_EUR=150 MIN_MARGIN_EUR=100 \
+            python scripts/monitor_watches.py
+          }
+
+          # Een fout in één monitor mag de lus nooit stoppen.
+          run() {
+            echo "::group::$1 ($(date -u +%H:%M:%S) UTC)"
+            "run_$1" || echo "::warning::$1 monitor gaf een fout (lus gaat door)"
+            echo "::endgroup::"
+          }
+
+          save_state() {
+            git add state/*.json
+            git diff --cached --quiet && return 0
+            git commit -q -m "Update seen listings (monitor-loop)"
+            local attempt
+            for attempt in 1 2 3 4 5; do
+              git push -q && return 0
+              echo "Push mislukt (poging $attempt), opnieuw proberen na rebase..."
+              git fetch -q origin main
+              git rebase -q origin/main || git rebase --abort || true
+              sleep $((RANDOM % 8 + 2))
+            done
+            echo "::warning::State kon niet gepusht worden, volgende ronde opnieuw"
+          }
+
+          start=$(date +%s)
+          deadline=$((start + LOOP_MINUTES * 60))
+          i=0
+          while :; do
+            # Nieuwe commits (bv. aangepaste filters) meteen meenemen.
+            git pull -q --rebase origin main || git rebase --abort 2>/dev/null || true
+
+            run ps5
+            # De andere 4 één keer per uur (12 rondes), ~15 min uit elkaar.
+            case $((i % 12)) in
+              0) run iphones ;;
+              3) run macbooks ;;
+              6) run switch2 ;;
+              9) run watches ;;
+            esac
+            save_state
+
+            i=$((i + 1))
+            next=$((start + i * INTERVAL_SECONDS))
+            [ "$next" -ge "$deadline" ] && break
+            now=$(date +%s)
+            [ "$next" -gt "$now" ] && sleep $((next - now))
+          done
+          echo "Lus klaar na $i rondes."
+
+      - name: Volgende lus starten
+        # Ook na een fout doorgaan; alleen niet na handmatig annuleren.
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run monitor_loop.yml --repo "$GITHUB_REPOSITORY" --ref main

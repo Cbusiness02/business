@@ -19,8 +19,8 @@ on:
   # verscheen simpelweg nooit). Deze monitor behoudt minuut-offset 0
   # (:00/:05/:10/...), de andere 4 monitors zijn verschoven naar
   # offset 1/2/3/4 zodat nooit twee tegelijk een runner opeisen.
-  schedule:
-    - cron: "*/5 * * * *"
+  # Geen eigen schedule meer: draait via monitor_loop.yml (13-10-2026).
+  # Handmatig starten kan nog steeds.
   workflow_dispatch: {}
 
 permissions:
