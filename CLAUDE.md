@@ -14,13 +14,15 @@
   (`workflow_dispatch`) werkten wel altijd.
 - In de nieuwe repo werkt de planning weer automatisch, maar nog met gaten:
   geplande runs om 23:07 (PS5), 23:33 (iPhone, gepland :11) en 23:36 (PS5),
-  terwijl PS5 op `*/5` staat. De gebruiker vindt het werken zo voorlopig goed.
-- Reservefix klaar maar NIET op main: `monitor_loop.yml` op branch
-  `claude/clever-noether-630z4d` (commit `6b974e0`). Eén job die ~5u40m
-  zelf elke 5 min de monitors draait en zichzelf daarna opnieuw start; haalt
-  de cron uit de `_v2`-workflows. Alleen naar main zetten als de gebruiker
-  dat vraagt, bv. als de planning weer urenlang wegvalt.
+  terwijl PS5 op `*/5` staat. Daarom is daarna de lus hieronder aangezet.
+- Oplossing (actief sinds 13-10-2026, op verzoek van de gebruiker):
+  `monitor_loop.yml`. Eén job die ~5u40m zelf elke 5 min de monitors draait
+  (PS5 elke ronde, de andere 4 elk uur gespreid), de state na elke ronde
+  pusht en zichzelf daarna opnieuw start via `workflow_dispatch`. Uurlijkse
+  cron is alleen vangnet; concurrency-groep `monitor-loop` voorkomt dubbele
+  lussen. De `_v2`-workflows hebben geen eigen cron meer (alleen handmatig).
 
 ## Controleren
-- Geplande runs opvragen: GitHub-API `list_workflow_runs` met event
-  `schedule` op `Cbusiness02/Business`.
+- Lus controleren: GitHub-API `list_workflow_runs` voor `monitor_loop.yml`
+  op `Cbusiness02/Business`. Er hoort altijd één run `in_progress` te zijn;
+  elke ~5u40m een nieuwe met event `workflow_dispatch`.
