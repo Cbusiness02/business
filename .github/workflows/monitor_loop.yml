@@ -15,8 +15,11 @@ name: Monitor Loop (alle 5 monitors)
 #      annuleren -- zo kun je hem altijd stoppen).
 #   4. De uurlijkse cron is alleen een vangnet: als de keten ooit breekt,
 #      pakt de eerstvolgende geplande run die wel doorkomt hem weer op.
-#      Door de concurrency-groep draait er nooit meer dan één lus tegelijk;
-#      een extra start wacht netjes tot de lopende lus klaar is.
+#      Draait de lus al, dan sluit zo'n vangnet-run zich meteen af als
+#      geslaagd (job 'guard'). Vroeger wachtte hij in de concurrency-rij en
+#      werd hij elk uur als "cancelled" afgebroken (14-10-2026).
+#   5. De concurrency-groep op de loop-job zorgt dat er nooit twee lussen
+#      tegelijk draaien; een herstart wacht tot de vorige lus klaar is.
 #
 # Volledig stoppen: Actions -> Monitor Loop -> "..." -> Disable workflow,
 # en daarna de lopende run annuleren.
@@ -30,13 +33,44 @@ permissions:
   contents: write
   actions: write
 
-concurrency:
-  group: monitor-loop
-  cancel-in-progress: false
-
 jobs:
-  loop:
+  guard:
     runs-on: ubuntu-latest
+    outputs:
+      proceed: ${{ steps.check.outputs.proceed }}
+    steps:
+      - name: Draait de lus al?
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Een (her)start via workflow_dispatch gaat altijd door; alleen het
+          # uurlijkse vangnet stopt als er al een andere run actief is.
+          if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          active=0
+          for status in in_progress queued; do
+            n=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/monitor_loop.yml/runs?status=$status&per_page=20" \
+              --jq "[.workflow_runs[] | select(.id != $GITHUB_RUN_ID)] | length")
+            active=$((active + n))
+          done
+          if [ "$active" -gt 0 ]; then
+            echo "Lus draait al ($active actieve run(s)); vangnet niet nodig."
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Geen actieve lus gevonden; vangnet start de lus."
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  loop:
+    needs: guard
+    if: needs.guard.outputs.proceed == 'true'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: monitor-loop
+      cancel-in-progress: false
     # GitHub's maximum is 360 minuten; de lus stopt zelf na 340.
     timeout-minutes: 355
     steps:
