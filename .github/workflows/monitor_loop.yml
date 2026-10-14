@@ -44,23 +44,32 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # Een (her)start via workflow_dispatch gaat altijd door; alleen het
-          # uurlijkse vangnet stopt als er al een andere run actief is.
-          if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then
-            echo "proceed=true" >> "$GITHUB_OUTPUT"
-            exit 0
+          # Telt andere runs van deze workflow met een bepaalde status.
+          count() {
+            local total=0 n status
+            for status in "$@"; do
+              n=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/monitor_loop.yml/runs?status=$status&per_page=20" \
+                --jq "[.workflow_runs[] | select(.id != $GITHUB_RUN_ID)] | length")
+              total=$((total + n))
+            done
+            echo "$total"
+          }
+
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+            # Vangnet: alleen starten als er helemaal geen lus actief is.
+            active=$(count in_progress queued pending waiting)
+          else
+            # (Her)start: overslaan als er al een andere herstart klaarstaat,
+            # zodat er nooit twee ketens ontstaan (die elkaar anders als
+            # "cancelled" verdringen). De lopende lus zelf telt niet mee.
+            active=$(count queued pending waiting)
           fi
-          active=0
-          for status in in_progress queued; do
-            n=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/monitor_loop.yml/runs?status=$status&per_page=20" \
-              --jq "[.workflow_runs[] | select(.id != $GITHUB_RUN_ID)] | length")
-            active=$((active + n))
-          done
+
           if [ "$active" -gt 0 ]; then
-            echo "Lus draait al ($active actieve run(s)); vangnet niet nodig."
+            echo "Er is al een lus actief of klaarstaand ($active run(s)); deze run is niet nodig."
             echo "proceed=false" >> "$GITHUB_OUTPUT"
           else
-            echo "Geen actieve lus gevonden; vangnet start de lus."
+            echo "Lus wordt gestart."
             echo "proceed=true" >> "$GITHUB_OUTPUT"
           fi
 
