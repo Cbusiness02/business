@@ -1,14 +1,4 @@
 {
-  "m2448143773": {
-    "firstSeen": "2026-09-29T14:52:20.279881+00:00",
-    "model": "iPhone 15",
-    "title": "Iphone 15 zwart"
-  },
-  "m2448151998": {
-    "firstSeen": "2026-09-29T15:10:33.987534+00:00",
-    "model": "iPhone 15 Pro Max",
-    "title": "Iphone 15 pro max 256gb"
-  },
   "m2448159816": {
     "firstSeen": "2026-09-29T15:32:44.633047+00:00",
     "model": "iPhone 16 Pro Max",
@@ -1178,5 +1168,10 @@
     "firstSeen": "2026-10-20T10:37:17.946042+00:00",
     "model": "iPhone 15 Pro",
     "title": "iPhone 15 Pro 95% (inruil mogelijk)"
+  },
+  "m2455951961": {
+    "firstSeen": "2026-10-20T15:12:40.148614+00:00",
+    "model": "iPhone 16",
+    "title": "Iphone 16"
   }
 }
