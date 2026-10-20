@@ -1,9 +1,4 @@
 {
-  "m2448043077": {
-    "firstSeen": "2026-09-29T10:19:24.669813+00:00",
-    "model": "iPhone 16 Plus",
-    "title": "IPHONE 16 PLUS 128 GB  Geseald"
-  },
   "m2448143773": {
     "firstSeen": "2026-09-29T14:52:20.279881+00:00",
     "model": "iPhone 15",
@@ -1173,5 +1168,15 @@
     "firstSeen": "2026-10-20T08:37:17.264191+00:00",
     "model": "iPhone 15",
     "title": "iPhone 15 94% (inruil mogelijk)"
+  },
+  "m2455782149": {
+    "firstSeen": "2026-10-20T10:37:17.946042+00:00",
+    "model": "iPhone 15",
+    "title": "iPhone 15 94% (inruil mogelijk)"
+  },
+  "m2455792371": {
+    "firstSeen": "2026-10-20T10:37:17.946042+00:00",
+    "model": "iPhone 15 Pro",
+    "title": "iPhone 15 Pro 95% (inruil mogelijk)"
   }
 }
