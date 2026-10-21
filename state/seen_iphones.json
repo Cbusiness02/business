@@ -1,9 +1,4 @@
 {
-  "m2448465765": {
-    "firstSeen": "2026-09-30T13:21:28.232205+00:00",
-    "model": "iPhone 15",
-    "title": "Apple iPhone 15 zwart"
-  },
   "m2448477838": {
     "firstSeen": "2026-09-30T13:57:44.529399+00:00",
     "model": "iPhone 16 Plus",
@@ -1218,5 +1213,15 @@
     "firstSeen": "2026-10-21T12:34:16.222642+00:00",
     "model": "iPhone 15 Plus",
     "title": "iPhone 15 Plus- lichtblauw - 128 GB"
+  },
+  "m2456252674": {
+    "firstSeen": "2026-10-21T13:34:16.366774+00:00",
+    "model": "iPhone 15 Pro",
+    "title": "iPhone 15 Pro 128GB - Zo goed als nieuw"
+  },
+  "m2456254499": {
+    "firstSeen": "2026-10-21T13:34:16.366774+00:00",
+    "model": "iPhone 15",
+    "title": "iphone 15 zwart 128gb"
   }
 }
