@@ -1,9 +1,4 @@
 {
-  "m2449230998": {
-    "firstSeen": "2026-10-02T15:59:30.207495+00:00",
-    "model": "iPhone 16 Plus",
-    "title": "iPhone 16 plus zwart 128 GB + garantie 100%"
-  },
   "m2449371679": {
     "firstSeen": "2026-10-03T07:42:36.588532+00:00",
     "model": "iPhone 16 Pro",
@@ -1183,5 +1178,10 @@
     "firstSeen": "2026-10-23T15:52:43.422180+00:00",
     "model": "iPhone 16 Pro",
     "title": "Apple iPhone 16 Pro 128GB"
+  },
+  "m2457053625": {
+    "firstSeen": "2026-10-23T16:52:43.093146+00:00",
+    "model": "iPhone 16 Pro Max",
+    "title": "Apple iphone 16 pro max zwart 256gb"
   }
 }
