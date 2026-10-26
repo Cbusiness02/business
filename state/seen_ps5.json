@@ -532,5 +532,11 @@
     "firstSeen": "2026-10-26T11:37:03.420426+00:00",
     "priceType": "FAST_BID",
     "title": "PS5 Disc Edition, 3 controllers en 9 games"
+  },
+  "m2458294569": {
+    "categoryId": 2952,
+    "firstSeen": "2026-10-26T12:12:06.556505+00:00",
+    "priceType": "MIN_BID",
+    "title": "PlayStation 5 Slim (Digital Edition) met 1 controller"
   }
 }
