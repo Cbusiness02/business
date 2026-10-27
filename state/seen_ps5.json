@@ -540,5 +540,11 @@
     "firstSeen": "2026-10-27T07:38:38.812630+00:00",
     "priceType": "FIXED",
     "title": "Sony Playstation 5 Slim Disc 1TB (inruil mogelijk)"
+  },
+  "m2458672310": {
+    "categoryId": 2954,
+    "firstSeen": "2026-10-27T12:34:01.578927+00:00",
+    "priceType": "MIN_BID",
+    "title": "Playstation 5 Disk, valt soms uit."
   }
 }
