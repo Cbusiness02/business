@@ -1,19 +1,4 @@
 {
-  "m2450916322": {
-    "firstSeen": "2026-10-07T07:53:53.601613+00:00",
-    "model": "iPhone 15 Pro Max",
-    "title": "iPhone 15 Pro Max 256GB Zilver - Zo goed als nieuw"
-  },
-  "m2450917390": {
-    "firstSeen": "2026-10-07T07:53:53.601613+00:00",
-    "model": "iPhone 15 Pro",
-    "title": "iPhone 15 Pro 128GB Zwart - Zo goed als nieuw"
-  },
-  "m2450933488": {
-    "firstSeen": "2026-10-07T08:26:46.310328+00:00",
-    "model": "iPhone 16 Pro Max",
-    "title": "iPhone 16 Pro Max 512GB \u2013 Desert Titanium"
-  },
   "m2450959924": {
     "firstSeen": "2026-10-07T09:33:31.638882+00:00",
     "model": "iPhone 16 Pro Max",
@@ -1298,5 +1283,10 @@
     "firstSeen": "2026-10-27T21:29:29.224845+00:00",
     "model": "iPhone 16",
     "title": "iPhone 16 128GB Wit - 97% batterijconditie"
+  },
+  "m2458960012": {
+    "firstSeen": "2026-10-28T08:40:09.529919+00:00",
+    "model": "iPhone 15",
+    "title": "iPhone 15 128gb"
   }
 }
