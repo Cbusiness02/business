@@ -540,5 +540,11 @@
     "firstSeen": "2026-10-27T18:09:27.039203+00:00",
     "priceType": "MIN_BID",
     "title": "ps5"
+  },
+  "m2458959143": {
+    "categoryId": 2954,
+    "firstSeen": "2026-10-28T07:50:05.766293+00:00",
+    "priceType": "FAST_BID",
+    "title": "Playstation 5 incl. 2 controllers en 5 spellen"
   }
 }
