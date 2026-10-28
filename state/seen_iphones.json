@@ -1,14 +1,4 @@
 {
-  "m2451030052": {
-    "firstSeen": "2026-10-07T12:31:16.371105+00:00",
-    "model": "iPhone 15 Plus",
-    "title": "iPhone 15 Plus 97% (inruil mogelijk)"
-  },
-  "m2451045592": {
-    "firstSeen": "2026-10-07T12:55:54.119109+00:00",
-    "model": "iPhone 16 Pro Max",
-    "title": "iPhone 16 Pro Max 512GB \u2013 Desert Titanium"
-  },
   "m2451086690": {
     "firstSeen": "2026-10-07T14:22:09.258752+00:00",
     "model": "iPhone 16 Pro Max",
@@ -1288,5 +1278,10 @@
     "firstSeen": "2026-10-28T12:15:31.368242+00:00",
     "model": "iPhone 16 Pro Max",
     "title": "iPhone 16 Pro Max - met 22hoesjes"
+  },
+  "m2459068162": {
+    "firstSeen": "2026-10-28T13:15:30.330491+00:00",
+    "model": "iPhone 16 Pro",
+    "title": "Iphone 16 pro 512 gb"
   }
 }
