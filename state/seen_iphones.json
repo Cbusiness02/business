@@ -9,16 +9,6 @@
     "model": "iPhone 16",
     "title": "Apple Iphone 16 | Nette staat | Batterij 90% | DS Telecom"
   },
-  "m2451515128": {
-    "firstSeen": "2026-10-08T17:38:06.083794+00:00",
-    "model": "iPhone 15",
-    "title": "Iphone 15 yellow 128 GB + garantie 100%"
-  },
-  "m2451515556": {
-    "firstSeen": "2026-10-08T17:38:06.083794+00:00",
-    "model": "iPhone 16 Plus",
-    "title": "Iphone 16 plus marine blauw 128 GB + garantie 99%"
-  },
   "m2451552379": {
     "firstSeen": "2026-10-08T19:37:25.660827+00:00",
     "model": "iPhone 15 Pro Max",
@@ -1293,5 +1283,15 @@
     "firstSeen": "2026-10-29T12:37:03.003634+00:00",
     "model": "iPhone 15",
     "title": "iPhone 15 96% (inruil mogelijk)"
+  },
+  "m2459561481": {
+    "firstSeen": "2026-10-29T18:12:26.016786+00:00",
+    "model": "iPhone 15",
+    "title": "Apple Iphone 15 | Nieuwstaat | Batterij 92% | DS Telecom"
+  },
+  "m2459562228": {
+    "firstSeen": "2026-10-29T18:12:26.016786+00:00",
+    "model": "iPhone 15 Plus",
+    "title": "Apple Iphone 15 Plus | Zeer nette staat | 86% | DS Telecom"
   }
 }
