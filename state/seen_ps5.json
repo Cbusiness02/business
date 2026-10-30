@@ -572,5 +572,11 @@
     "firstSeen": "2026-10-30T10:03:26.017401+00:00",
     "priceType": "FAST_BID",
     "title": "PlayStation 5 Slim Digital Edition 825 GB + DualSense"
+  },
+  "m2459863732": {
+    "categoryId": 2954,
+    "firstSeen": "2026-10-30T14:53:49.578792+00:00",
+    "priceType": "MIN_BID",
+    "title": "PlayStation 5 Disc Edition + 3 games + extra controller"
   }
 }
