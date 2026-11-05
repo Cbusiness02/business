@@ -568,5 +568,11 @@
     "firstSeen": "2026-11-05T08:54:13.165151+00:00",
     "priceType": "FIXED",
     "title": "PlayStation 5 Disc Versie met 2 Controllers"
+  },
+  "m2462143011": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-05T10:59:13.053197+00:00",
+    "priceType": "FAST_BID",
+    "title": "PlayStation 5 met controller en 1 TB opslag"
   }
 }
