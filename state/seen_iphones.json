@@ -9,11 +9,6 @@
     "model": "iPhone 16 Pro",
     "title": "Apple Iphone 16 Pro | Nieuwstaat | Batterij 88% | DS Telecom"
   },
-  "m2454360691": {
-    "firstSeen": "2026-10-16T14:10:23.250788+00:00",
-    "model": "iPhone 16 Pro Max",
-    "title": "iPhone 16 Pro Max 256GB"
-  },
   "m2454394773": {
     "firstSeen": "2026-10-16T15:10:21.587615+00:00",
     "model": "iPhone 16 Pro",
@@ -1483,5 +1478,10 @@
     "firstSeen": "2026-11-06T10:40:54.071837+00:00",
     "model": "iPhone 16 Pro Max",
     "title": "iPhone 16 Pro Max 256GB Zwart"
+  },
+  "m2462585843": {
+    "firstSeen": "2026-11-06T14:16:15.825085+00:00",
+    "model": "iPhone 15 Pro",
+    "title": "Iphone 15 Pro - Zwart"
   }
 }
