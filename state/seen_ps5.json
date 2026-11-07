@@ -576,5 +576,17 @@
     "firstSeen": "2026-11-07T13:22:36.567791+00:00",
     "priceType": "MIN_BID",
     "title": "Playstation 5 - disk editie,"
+  },
+  "m2463032889": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-07T14:32:36.851359+00:00",
+    "priceType": "FAST_BID",
+    "title": "Sony PlayStation 5 (PS5) \u2013 Disc Edition \u2013 4K \u2013 120Hz"
+  },
+  "m2463034529": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-07T14:32:36.851359+00:00",
+    "priceType": "FIXED",
+    "title": "Playstation 5 Slim"
   }
 }
