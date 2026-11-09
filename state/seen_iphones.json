@@ -4,11 +4,6 @@
     "model": "iPhone 15 Pro Max",
     "title": "Iphone 15 pro max 256gb"
   },
-  "m2455428369": {
-    "firstSeen": "2026-10-19T11:15:52.714130+00:00",
-    "model": "iPhone 15",
-    "title": "iPhone 15 | 128GB opslag | 92% batterijcapaciteit"
-  },
   "m2455480627": {
     "firstSeen": "2026-10-19T13:15:47.864007+00:00",
     "model": "iPhone 16",
@@ -1573,5 +1568,15 @@
     "firstSeen": "2026-11-08T18:34:33.255613+00:00",
     "model": "iPhone 15",
     "title": "iPhone 15 - 128GB"
+  },
+  "m2463753978": {
+    "firstSeen": "2026-11-09T11:20:37.118820+00:00",
+    "model": "iPhone 16 Pro Max",
+    "title": "Iphone 16 Pro Max (schermproblemen)"
+  },
+  "m2463773477": {
+    "firstSeen": "2026-11-09T11:20:37.118820+00:00",
+    "model": "iPhone 16",
+    "title": "Iphone 16 256gb"
   }
 }
