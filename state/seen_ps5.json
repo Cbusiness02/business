@@ -590,5 +590,11 @@
     "firstSeen": "2026-11-09T03:50:02.966664+00:00",
     "priceType": "MIN_BID",
     "title": "PS5 Pro Digital | 2TB Opslag | 1 x DualSense controller"
+  },
+  "m2463806104": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-09T12:30:31.155905+00:00",
+    "priceType": "FIXED",
+    "title": "Ps5 Pro"
   }
 }
