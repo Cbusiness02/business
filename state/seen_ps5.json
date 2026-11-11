@@ -670,5 +670,11 @@
     "firstSeen": "2026-11-11T17:04:20.543316+00:00",
     "priceType": "FIXED",
     "title": "PlayStation 5 disc edition"
+  },
+  "m2464752233": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-11T19:39:21.640531+00:00",
+    "priceType": "MIN_BID",
+    "title": "Playstation 5 disc versie met controller en fc27"
   }
 }
