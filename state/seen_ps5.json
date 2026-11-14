@@ -820,5 +820,11 @@
     "firstSeen": "2026-11-14T17:11:01.401690+00:00",
     "priceType": "FAST_BID",
     "title": "PlayStation 5"
+  },
+  "m2465839966": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-14T17:31:02.831537+00:00",
+    "priceType": "FIXED",
+    "title": "PlayStation 5 Disc Edition - Zo goed als nieuw"
   }
 }
