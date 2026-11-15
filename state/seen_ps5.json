@@ -844,5 +844,11 @@
     "firstSeen": "2026-11-15T16:47:08.936969+00:00",
     "priceType": "MIN_BID",
     "title": "PlayStation 5 Digital Edition met 2 controllers"
+  },
+  "m2466292119": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-15T18:22:11.116002+00:00",
+    "priceType": "FAST_BID",
+    "title": "PlayStation 5 Digital Edition - 30th Anniversary Edition"
   }
 }
