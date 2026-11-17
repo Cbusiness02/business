@@ -1,10 +1,4 @@
 {
-  "m2458566166": {
-    "categoryId": 2954,
-    "firstSeen": "2026-10-27T07:38:38.812630+00:00",
-    "priceType": "FIXED",
-    "title": "Sony Playstation 5 Slim Disc 1TB (inruil mogelijk)"
-  },
   "m2458672310": {
     "categoryId": 2954,
     "firstSeen": "2026-10-27T12:34:01.578927+00:00",
@@ -904,5 +898,11 @@
     "firstSeen": "2026-11-16T20:03:42.930504+00:00",
     "priceType": "MIN_BID",
     "title": "Playstation 5 Slim Disk, Volledig Nieuwstaat, Factuur"
+  },
+  "m2466778497": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-17T07:39:24.523435+00:00",
+    "priceType": "MIN_BID",
+    "title": "Playstation 5 Digital Edition 1TB"
   }
 }
