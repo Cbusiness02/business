@@ -4,11 +4,6 @@
     "model": "iPhone 15 Pro Max",
     "title": "Iphone 15 pro max 256gb"
   },
-  "m2459055892": {
-    "firstSeen": "2026-10-28T12:15:31.368242+00:00",
-    "model": "iPhone 16 Pro Max",
-    "title": "iPhone 16 Pro Max - met 22hoesjes"
-  },
   "m2459068162": {
     "firstSeen": "2026-10-28T13:15:30.330491+00:00",
     "model": "iPhone 16 Pro",
@@ -1458,5 +1453,10 @@
     "firstSeen": "2026-11-18T11:26:20.674932+00:00",
     "model": "iPhone 15 Pro",
     "title": "iPhone 15 Pro 93% (inruil mogelijk)"
+  },
+  "m2467243054": {
+    "firstSeen": "2026-11-18T12:26:22.361042+00:00",
+    "model": "iPhone 15",
+    "title": "Iphone 15"
   }
 }
