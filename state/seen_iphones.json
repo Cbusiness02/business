@@ -4,11 +4,6 @@
     "model": "iPhone 15 Pro Max",
     "title": "Iphone 15 pro max 256gb"
   },
-  "m2459068162": {
-    "firstSeen": "2026-10-28T13:15:30.330491+00:00",
-    "model": "iPhone 16 Pro",
-    "title": "Iphone 16 pro 512 gb"
-  },
   "m2459103763": {
     "firstSeen": "2026-10-28T14:15:32.441390+00:00",
     "model": "iPhone 15 Plus",
@@ -1458,5 +1453,25 @@
     "firstSeen": "2026-11-18T12:26:22.361042+00:00",
     "model": "iPhone 15",
     "title": "Iphone 15"
+  },
+  "m2467258802": {
+    "firstSeen": "2026-11-18T13:26:20.866175+00:00",
+    "model": "iPhone 16",
+    "title": "iPhone 16 256GB 100% (inruil mogelijk)"
+  },
+  "m2467265084": {
+    "firstSeen": "2026-11-18T13:26:20.866175+00:00",
+    "model": "iPhone 16",
+    "title": "Iphone 16 ultramarijn 128 GB + garantie 97%"
+  },
+  "m2467265352": {
+    "firstSeen": "2026-11-18T13:26:20.866175+00:00",
+    "model": "iPhone 16",
+    "title": "Iphone 16 black 128 GB + garantie 92%"
+  },
+  "m2467280992": {
+    "firstSeen": "2026-11-18T13:26:20.866175+00:00",
+    "model": "iPhone 16 Pro",
+    "title": "Apple iPhone 16 Pro 256GB"
   }
 }
