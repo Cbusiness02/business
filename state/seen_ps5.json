@@ -1000,5 +1000,11 @@
     "firstSeen": "2026-11-18T08:50:51.552026+00:00",
     "priceType": "MIN_BID",
     "title": "PlayStation 5 disc variant"
+  },
+  "m2467172016": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-18T09:05:57.598422+00:00",
+    "priceType": "FAST_BID",
+    "title": "PlayStation 5 Digital Edition 825GB - Zo goed als nieuw"
   }
 }
