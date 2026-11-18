@@ -4,11 +4,6 @@
     "model": "iPhone 15 Pro Max",
     "title": "Iphone 15 pro max 256gb"
   },
-  "m2459182042": {
-    "firstSeen": "2026-10-28T17:50:58.697288+00:00",
-    "model": "iPhone 15 Pro Max",
-    "title": "Iphone 15Promax"
-  },
   "m2459264568": {
     "firstSeen": "2026-10-28T22:26:21.201115+00:00",
     "model": "iPhone 16 Pro Max",
@@ -1443,5 +1438,15 @@
     "firstSeen": "2026-11-18T16:01:41.018365+00:00",
     "model": "iPhone 16 Pro",
     "title": "iPhone 16 Pro  - Krasvrij, 90% batterijcapaciteit"
+  },
+  "m2467381806": {
+    "firstSeen": "2026-11-18T18:01:41.654965+00:00",
+    "model": "iPhone 15 Pro",
+    "title": "iPhone 15 Pro"
+  },
+  "m2467390100": {
+    "firstSeen": "2026-11-18T18:01:41.654965+00:00",
+    "model": "iPhone 15 Pro Max",
+    "title": "iPhone 15 Pro Max 256 GB - Zo goed als nieuw"
   }
 }
