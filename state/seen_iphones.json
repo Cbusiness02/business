@@ -1,14 +1,4 @@
 {
-  "m2459561481": {
-    "firstSeen": "2026-10-29T18:12:26.016786+00:00",
-    "model": "iPhone 15",
-    "title": "Apple Iphone 15 | Nieuwstaat | Batterij 92% | DS Telecom"
-  },
-  "m2459562228": {
-    "firstSeen": "2026-10-29T18:12:26.016786+00:00",
-    "model": "iPhone 15 Plus",
-    "title": "Apple Iphone 15 Plus | Zeer nette staat | 86% | DS Telecom"
-  },
   "m2459647437": {
     "firstSeen": "2026-10-30T00:47:49.454234+00:00",
     "model": "iPhone 16 Pro Max",
@@ -1448,5 +1438,15 @@
     "firstSeen": "2026-11-19T15:23:24.208285+00:00",
     "model": "iPhone 16 Pro",
     "title": "IPhone 16 pro 512GB zwart 90%"
+  },
+  "m2467745578": {
+    "firstSeen": "2026-11-19T18:23:26.617103+00:00",
+    "model": "iPhone 15 Pro",
+    "title": "iPhone 15 Pro - Batterij 80%"
+  },
+  "m2467749381": {
+    "firstSeen": "2026-11-19T18:23:26.617103+00:00",
+    "model": "iPhone 15",
+    "title": "Apple Iphone 15 | Nette staat | Batterij 88% | DS Telecom"
   }
 }
