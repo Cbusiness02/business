@@ -1054,5 +1054,17 @@
     "firstSeen": "2026-11-19T16:58:20.654387+00:00",
     "priceType": "MIN_BID",
     "title": "Sony Playstation 5"
+  },
+  "m2467777021": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-19T19:18:48.386220+00:00",
+    "priceType": "FIXED",
+    "title": "Playstation 5"
+  },
+  "m2467777698": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-19T19:18:48.386220+00:00",
+    "priceType": "MIN_BID",
+    "title": "Max 3 gebruikte ps5 slim digital."
   }
 }
