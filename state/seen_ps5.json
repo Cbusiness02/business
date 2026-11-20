@@ -1660,5 +1660,29 @@
     "firstSeen": "2026-11-20T11:44:27.521803+00:00",
     "priceType": "MIN_BID",
     "title": "Playstation 5 - Ongeopend, gloednieuw"
+  },
+  "m2467976781": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T11:59:50.414041+00:00",
+    "priceType": "MIN_BID",
+    "title": "Sony PlayStation 5 Digital Edition met Controller"
+  },
+  "m2467976958": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T11:59:50.414041+00:00",
+    "priceType": "MIN_BID",
+    "title": "PlayStation 5 Pro"
+  },
+  "m2467979098": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T11:59:50.414041+00:00",
+    "priceType": "FAST_BID",
+    "title": "PlayStation 5 (1TB) met controller en kabels"
+  },
+  "m2467980077": {
+    "categoryId": 2952,
+    "firstSeen": "2026-11-20T11:59:50.414041+00:00",
+    "priceType": "MIN_BID",
+    "title": "PS5 Slim Digital 1TB + 2 originele controllers"
   }
 }
