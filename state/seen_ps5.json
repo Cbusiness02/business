@@ -1648,5 +1648,17 @@
     "firstSeen": "2026-11-20T11:24:28.651104+00:00",
     "priceType": "FIXED",
     "title": "PlayStation 5 Pro met maar liefst 2TB opslagruimte!"
+  },
+  "m2467969822": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T11:44:27.521803+00:00",
+    "priceType": "FAST_BID",
+    "title": "PlayStation 5 Disc Versie met Controller - Zo goed als nieuw"
+  },
+  "m2467971734": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T11:44:27.521803+00:00",
+    "priceType": "MIN_BID",
+    "title": "Playstation 5 - Ongeopend, gloednieuw"
   }
 }
