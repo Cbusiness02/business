@@ -827,6 +827,18 @@
     "priceType": "MIN_BID",
     "title": "Playstation 5 Digital Edition 1TB"
   },
+  "m2466787564": {
+    "categoryId": 2952,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "SEE_DESCRIPTION",
+    "title": "Ps 5 Reparatie Service -Stikdrift /Hdmi Poort / Liquid Metal"
+  },
+  "m2466847876": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "MIN_BID",
+    "title": "Playstation 5 Pro | 2 TB"
+  },
   "m2466865367": {
     "categoryId": 2954,
     "firstSeen": "2026-11-17T11:29:52.372107+00:00",
@@ -856,6 +868,12 @@
     "firstSeen": "2026-11-17T14:44:51.155587+00:00",
     "priceType": "MIN_BID",
     "title": "zonder doos Playstation 5 met 2 controllers - Zo goed als ni"
+  },
+  "m2466955895": {
+    "categoryId": 2952,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "FIXED",
+    "title": "Sony PlayStation 5 Pro - Nieuw in doos (BESCHIKBAAR)"
   },
   "m2466958605": {
     "categoryId": 2954,
@@ -1019,6 +1037,18 @@
     "priceType": "MIN_BID",
     "title": "Playstation 5 disc met 2 TB M.2 ssd"
   },
+  "m2467622201": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "FAST_BID",
+    "title": "PlayStation 5 Digital Edition - Nieuw in doos"
+  },
+  "m2467630845": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "FAST_BID",
+    "title": "Playstation 5 + spellen + headset. 1 TB."
+  },
   "m2467632022": {
     "categoryId": 1741,
     "firstSeen": "2026-11-19T13:12:54.751744+00:00",
@@ -1031,11 +1061,23 @@
     "priceType": "FAST_BID",
     "title": "PlayStation 5 Digital Edition - Nieuw in doos"
   },
+  "m2467667260": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "MIN_BID",
+    "title": "PlayStation 5 Digital Edition - zeer goed"
+  },
   "m2467715562": {
     "categoryId": 2954,
     "firstSeen": "2026-11-19T16:08:20.664009+00:00",
     "priceType": "FAST_BID",
     "title": "PlayStation 5 Disc Edition met Vice City skin en controller"
+  },
+  "m2467719786": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "MIN_BID",
+    "title": "PlayStation 5 Slim Disc 1TB | 2 Controllers | Originele Doos"
   },
   "m2467732375": {
     "categoryId": 2954,
@@ -1175,11 +1217,53 @@
     "priceType": "MIN_BID",
     "title": "Sony PlayStation 5 Digital Edition 825 GB"
   },
+  "m2467812515": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "MIN_BID",
+    "title": "PlayStation 5 Disc Edition met 4 Topgames (850GB)"
+  },
   "m2467862498": {
     "categoryId": 2954,
     "firstSeen": "2026-11-20T05:49:04.727342+00:00",
     "priceType": "MIN_BID",
     "title": "Praktische nieuwe playstation 5 slim digital met factuur."
+  },
+  "m2467920778": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "FAST_BID",
+    "title": "PlayStation 5 Disc Edition incl Controller 825GB opslag - We"
+  },
+  "m2467922017": {
+    "categoryId": 2952,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "FAST_BID",
+    "title": "Ps5 slim disc 2 controllers + 4 games+tv"
+  },
+  "m2467926840": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "FAST_BID",
+    "title": "PlayStation 5 Disc Edition met games en accessoires"
+  },
+  "m2467939677": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "FIXED",
+    "title": "PS5 Digital Edition met 2 controllers"
+  },
+  "m2467941982": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "FIXED",
+    "title": "PS5 PRO met disk drive"
+  },
+  "m2467943155": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T10:44:27.944059+00:00",
+    "priceType": "FIXED",
+    "title": "PlayStation 5 Slim Digital Edition 1 TB + 2 Controllers"
   },
   "m2467943325": {
     "categoryId": 1630,
