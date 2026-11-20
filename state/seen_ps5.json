@@ -695,6 +695,12 @@
     "priceType": "FAST_BID",
     "title": "GTA 6 Disc Editie PS5 - Nieuw en Geseald"
   },
+  "m2466179995": {
+    "categoryId": 2952,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "FIXED",
+    "title": "PlayStation 5 Disc Edition + Victrix Pro BFG Controller"
+  },
   "m2466187196": {
     "categoryId": 2952,
     "firstSeen": "2026-11-15T14:42:10.243394+00:00",
@@ -1043,6 +1049,54 @@
     "priceType": "MIN_BID",
     "title": "Sony Playstation 5"
   },
+  "m2467752826": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "MIN_BID",
+    "title": "PlayStation 5 met  2 controllers"
+  },
+  "m2467754946": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "FAST_BID",
+    "title": "Sony PlayStation 5 Disc Edition met 2 controllers"
+  },
+  "m2467756380": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "MIN_BID",
+    "title": "Playstation 5, Digital edition"
+  },
+  "m2467759914": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "FIXED",
+    "title": "Te Koop! PS5 disc versie."
+  },
+  "m2467763605": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "FAST_BID",
+    "title": "PlayStation 5 Slim Digital Edition (1TB) \u2013 Ongebruikt"
+  },
+  "m2467766747": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "MIN_BID",
+    "title": "Playstation 5 - 825 GB Digital edition"
+  },
+  "m2467771876": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "FAST_BID",
+    "title": "Playstation 5 Digital Edition 500GB met controller en kabels"
+  },
+  "m2467774042": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "MIN_BID",
+    "title": "Ps5 digital edition slim 1 TB 2 monitoren 2 controllers etc."
+  },
   "m2467777021": {
     "categoryId": 2954,
     "firstSeen": "2026-11-19T19:18:48.386220+00:00",
@@ -1061,11 +1115,71 @@
     "priceType": "MIN_BID",
     "title": "PlayStation 5 825gb digital edition slim met Controller"
   },
+  "m2467779079": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "FIXED",
+    "title": "PlayStation 5 Digital Edition - Nieuw in doos"
+  },
+  "m2467783071": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "MIN_BID",
+    "title": "PlayStation 5 Disc Edition met Controller en Kabels"
+  },
+  "m2467788236": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "MIN_BID",
+    "title": "PlayStation 5 Slim Digital Edition (1TB)"
+  },
+  "m2467790116": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "MIN_BID",
+    "title": "Playstation 5 digital edition"
+  },
+  "m2467790824": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "MIN_BID",
+    "title": "PlayStation 5 Disc Edition 825GB + controller | gereset"
+  },
+  "m2467792640": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "MIN_BID",
+    "title": "Playstation 5 Disc + 2 controllers + controller base"
+  },
   "m2467793758": {
     "categoryId": 2954,
     "firstSeen": "2026-11-19T20:13:48.917877+00:00",
     "priceType": "MIN_BID",
     "title": "PlayStation 5 Disc Edition met Controller en Kabels"
+  },
+  "m2467794939": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "MIN_BID",
+    "title": "PS5 Gezocht! Ophalen"
+  },
+  "m2467795133": {
+    "categoryId": 2952,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "MIN_BID",
+    "title": "playstation 5 slim digital 1tb + controller met tmr sticks"
+  },
+  "m2467797255": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "FAST_BID",
+    "title": "Ps5 disc versie"
+  },
+  "m2467797560": {
+    "categoryId": 2954,
+    "firstSeen": "2026-11-20T09:59:30.238525+00:00",
+    "priceType": "MIN_BID",
+    "title": "Sony PlayStation 5 Digital Edition 825 GB"
   },
   "m2467862498": {
     "categoryId": 2954,
