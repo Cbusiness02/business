@@ -4,16 +4,6 @@
     "model": "iPhone 15 Pro Max",
     "title": "Apple iPhone 15 Pro Max 512GB - Nieuwstaat"
   },
-  "m2460013756": {
-    "firstSeen": "2026-10-30T23:09:40.154836+00:00",
-    "model": "iPhone 15",
-    "title": "Apple Iphone 15 | Nieuwstaat | Batterij 92% | DS Telecom"
-  },
-  "m2460014385": {
-    "firstSeen": "2026-10-30T23:09:40.154836+00:00",
-    "model": "iPhone 15",
-    "title": "Apple Iphone 15 | Nette staat | Batterij 100% | DS Telecom"
-  },
   "m2460150962": {
     "firstSeen": "2026-10-31T11:55:47.021578+00:00",
     "model": "iPhone 16",
@@ -1488,5 +1478,10 @@
     "firstSeen": "2026-11-20T16:44:55.455633+00:00",
     "model": "iPhone 16 Pro Max",
     "title": "Iphone 16 pro max inruilen mogelijk"
+  },
+  "m2468196052": {
+    "firstSeen": "2026-11-20T23:55:36.898693+00:00",
+    "model": "iPhone 16 Pro",
+    "title": "iPhone 16 Pro Desert Titanium"
   }
 }
