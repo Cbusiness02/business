@@ -4,16 +4,6 @@
     "model": "iPhone 15 Pro Max",
     "title": "Apple iPhone 15 Pro Max 512GB - Nieuwstaat"
   },
-  "m2460150962": {
-    "firstSeen": "2026-10-31T11:55:47.021578+00:00",
-    "model": "iPhone 16",
-    "title": "iPhone 16 256GB - 92% Batterijconditie"
-  },
-  "m2460151957": {
-    "firstSeen": "2026-10-31T11:55:47.021578+00:00",
-    "model": "iPhone 16 Pro Max",
-    "title": "iPhone 16 Pro Max - 256GB"
-  },
   "m2460193104": {
     "firstSeen": "2026-10-31T12:55:49.548398+00:00",
     "model": "iPhone 15 Pro",
@@ -1638,5 +1628,10 @@
     "firstSeen": "2026-11-21T11:06:19.216033+00:00",
     "model": "iPhone 16",
     "title": "iphone 16 128gb met icloud lock"
+  },
+  "m2468336353": {
+    "firstSeen": "2026-11-21T12:06:20.920653+00:00",
+    "model": "iPhone 15",
+    "title": "iPhone 15 128GB Matzwart"
   }
 }
